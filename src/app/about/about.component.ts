@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {
   concat,
   fromEvent,
@@ -26,8 +27,10 @@ import {delayWhen, filter, map, take, timeout} from 'rxjs/operators';
 })
 export class AboutComponent implements OnInit {
 
-    ngOnInit() {
+  constructor(private title: Title){}
 
+    ngOnInit() {
+      this.title.setTitle("setting title from the about component");
 
     }
 

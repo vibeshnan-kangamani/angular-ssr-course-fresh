@@ -1,0 +1,5 @@
+ /courses/01
+ /courses/02
+ /courses/03
+ /courses/04
+ /courses/05
